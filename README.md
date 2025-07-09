@@ -87,6 +87,13 @@ This project was built completely by me from scratch, including:
    BUILD SUCCESS
    ```
 
+## 🌐 Deployment
+The application is live and deployed using Render via a custom Dockerfile.
+
+🔗 Live URL: https://personal-finance-manager-ix14.onrender.com
+
+The project includes a Dockerfile that builds and runs the Spring Boot JAR using multi-stage Docker builds. This ensures portability and ease of deployment.
+
 ## 📂 Folder Structure
    ```bash
    src/
