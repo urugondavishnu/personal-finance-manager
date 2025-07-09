@@ -1,41 +1,113 @@
-# Personal Finance Manager
+# 💸 Personal Finance Manager
 
-Personal Finance Manager is a Java-based application designed to help users manage their personal finances effectively. It allows users to track income, expenses, and analyze their financial health.
+Personal Finance Manager is a full-featured Spring Boot–based web application developed by **me, Vishnu Urugonda**, as a solo project to demonstrate backend development skills in Java and Spring.
 
-## Features
+It enables users to manage their personal finances by securely tracking incomes, expenses, setting financial goals, and generating detailed reports.
 
-- **Add Transactions**: Record income and expenses with details.
-- **Edit Transactions**: Modify existing transaction entries.
-- **Delete Transactions**: Remove incorrect or obsolete transactions.
-- **View Reports**: Analyze spending patterns and financial summaries.
+---
 
-## Installation
+## 👨‍💻 About the Developer
 
-1. **Clone the Repository**:
+Hi, I’m Vishnu Urugonda — an aspiring backend developer passionate about building efficient, secure, and scalable systems.  
+This project was built completely by me from scratch, including:
 
+- Database design (H2 + JPA)
+- Session-based security (Spring Security)
+- Clean RESTful API structure
+- Unit testing with JUnit and Mockito
+- YAML-based config and profiles
+
+---
+
+## 🧩 Features
+
+### ✅ User Authentication  
+- Register, Login (session-based), Logout  
+- Passwords stored securely using BCrypt  
+- User isolation: data is fully scoped to the logged-in user
+
+### ✅ Transactions  
+- Add, view, edit, delete income and expense entries  
+- Tag transactions with category and description  
+- Prevent future-dated transactions  
+- Filter by category/date
+
+### ✅ Categories  
+- Built-in default categories (not deletable)  
+- Create/delete personal categories  
+- Prevent deletion if the category is in use
+
+### ✅ Savings Goals  
+- Create financial goals with target amount and date  
+- Track progress (% complete) based on transaction history  
+- Update or delete goals anytime
+
+### ✅ Reports  
+- Monthly and yearly financial summaries  
+- Expense/income breakdown by category  
+- Net savings automatically calculated
+
+### ✅ Technical Stack  
+- Spring Boot 3.2 (Java 17)  
+- Spring Security (session-based auth)  
+- Spring Data JPA (H2 database)  
+- Validation (Hibernate Validator)  
+- Unit Testing (JUnit 5, Mockito)  
+- Maven for dependency management  
+- Config via `application.yml`
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/urugondavishnu/personal-finance-manager.git
-
-2. **Navigate to the Project Directory**:
-   ```bash
    cd personal-finance-manager
-   
-3. **Build the Project**:
+2. **Build the project**:
    ```bash
    ./mvnw clean install
 
-## Usage
+## ▶️ Running the App Locally
 
-1. **Run the Application**:
+1. **Start the server**:
    ```bash
    ./mvnw spring-boot:run
+2. **Access the app in your browser**:
+   ```bash
+   http://localhost:8081
 
-2. **Access the Application** :
-   Open your web browser and navigate to http://localhost:8081
+## ✅ Running Unit Tests
+   ```bash
+   ./mvnw test
+   ```
+   Expected output:
+   ```yaml
+   Tests run: 6, Failures: 0, Errors: 0
+   BUILD SUCCESS
+   ```
 
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+## 📂 Folder Structure
+   ```bash
+   src/
+├── main/
+│   ├── java/com/vishnu/financemanager/
+│   └── resources/application.yml
+└── test/
+    └── java/com/vishnu/financemanager/service/
+   ```
 
-## Contact
+## 🤝 Contributing
+This is a solo-built project, but PRs are welcome for improvements.
+To contribute:
+   ```bash
+   fork → clone → branch → commit → pull request
+   ```
+
+## 📬 Contact
 For questions or feedback, please contact  [urugondavishnu](https://github.com/urugondavishnu).
 
+## 📌 Project Status
+- ✅ 100% features complete (as per spec)
+- ✅ All APIs unit-tested
+- ⏳ Deployment live
