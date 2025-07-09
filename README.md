@@ -94,6 +94,22 @@ The application is live and deployed using Render via a custom Dockerfile.
 
 The project includes a Dockerfile that builds and runs the Spring Boot JAR using multi-stage Docker builds. This ensures portability and ease of deployment.
 
+## 🔐 User Credentials
+By default, users need to register with a unique username and password to access the application.
+
+**Register**: Create your own username and password via the registration page.
+
+**Login**: Use the registered username and password to log in.
+
+Passwords are securely hashed with BCrypt for safety.
+
+For Testing or Demo Purposes
+You can use the following default test user credentials (if you have seeded any) or create your own:
+| Username   | Password    |
+| ---------- | ----------- |
+| `testuser` | `Test@1234` |
+
+
 ## 📂 Folder Structure
    ```bash
    src/
@@ -117,4 +133,4 @@ For questions or feedback, please contact  [urugondavishnu](https://github.com/u
 ## 📌 Project Status
 - ✅ 100% features complete (as per spec)
 - ✅ All APIs unit-tested
-- ⏳ Deployment live
+- ✅ Deployment is live
