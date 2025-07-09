@@ -1,6 +1,6 @@
 # 💸 Personal Finance Manager
 
-Personal Finance Manager is a full-featured Spring Boot–based web application developed by **me, Vishnu Urugonda**, as a solo project to demonstrate backend development skills in Java and Spring.
+Personal Finance Manager is a full-featured Spring Boot–based web application developed by me as a solo project to demonstrate backend development skills in Java and Spring.
 
 It enables users to manage their personal finances by securely tracking incomes, expenses, setting financial goals, and generating detailed reports.
 
@@ -9,7 +9,7 @@ It enables users to manage their personal finances by securely tracking incomes,
 ## 👨‍💻 About the Developer
 
 Hi, I’m Vishnu Urugonda — an aspiring backend developer passionate about building efficient, secure, and scalable systems.  
-This project was built completely by me from scratch, including:
+This project was built completely from scratch, including:
 
 - Database design (H2 + JPA)
 - Session-based security (Spring Security)
