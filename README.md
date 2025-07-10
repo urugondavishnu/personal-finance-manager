@@ -107,7 +107,7 @@ For Testing or Demo Purposes
 You can use the following default test user credentials (if you have seeded any) or create your own:
 | Username   | Password    |
 | ---------- | ----------- |
-| `testuser` | `Test@1234` |
+| `testuser@example.com` | `Test@1234` |
 
 
 ## 📂 Folder Structure
